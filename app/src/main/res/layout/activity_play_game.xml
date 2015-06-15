@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.iot23.mywhackamole.PlayGame"
+    android:background="@drawable/back_ground">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <TextView android:text="점수" android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:singleLine="false"
+            android:text="최고점수"
+            android:gravity="right"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:text="0"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textScore"
+            android:singleLine="false"
+            android:textSize="20dp"
+            android:layout_marginLeft="0dp" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHighestScore"
+            android:gravity="right"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:id="@+id/textPlayTime"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textPlayTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back_game">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearLayout3">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton1"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton2"
+                android:layout_marginLeft="23dp"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton3"
+                android:layout_marginLeft="22dp"
+                android:background="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout4" >
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton4"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton5"
+                android:layout_marginLeft="23dp"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton6"
+                android:layout_marginLeft="22dp"
+                android:background="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:id="@+id/linearLayout5">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton7"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton8"
+                android:layout_marginLeft="23dp"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="115dp"
+                android:id="@+id/imageButton9"
+                android:layout_marginLeft="22dp"
+                android:background="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="재 시 작"
+                android:id="@+id/buttonReset"
+                android:layout_marginRight="65dp"
+                android:background="#44223322"
+                android:textColor="#ffffffff"
+                android:onClick="onButtonRestartClicked" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="종 료"
+                android:id="@+id/buttonClose"
+                android:layout_gravity="right"
+                android:layout_marginLeft="65dp"
+                android:background="#44223322"
+                android:textColor="#ffffffff"
+                android:onClick="onButtonCloseClicked" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
